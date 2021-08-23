@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .small-color-boxes-wrapper .small-color-box {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+
+      .big-color-box {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+    </style>
+    <title>Color boxes</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Color boxes example</h1>
+      <div class="row">
+        <div class="col-6">
+          <div class="small-color-boxes-wrapper">
+            <span
+              data-red="84"
+              data-green="131"
+              data-blue="247"
+              class="small-color-box"
+              draggable="true"
+            ></span>
+            <span
+              data-red="72"
+              data-green="212"
+              data-blue="164"
+              class="small-color-box"
+              draggable="true"
+            ></span>
+            <span
+              data-red="170"
+              data-green="235"
+              data-blue="91"
+              class="small-color-box"
+              draggable="true"
+            ></span>
+            <span
+              data-red="212"
+              data-green="175"
+              data-blue="72"
+              class="small-color-box"
+              draggable="true"
+            ></span>
+            <span
+              data-red="245"
+              data-green="97"
+              data-blue="52"
+              class="small-color-box"
+              draggable="true"
+            ></span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div
+            class="big-color-box"
+            data-red="100"
+            data-green="50"
+            data-blue="150"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/color-box.js"></script>
+  </body>
+</html>
